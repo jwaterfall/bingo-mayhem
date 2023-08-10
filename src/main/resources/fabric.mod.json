@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "bingomayhem",
+	"version": "${version}",
+	"name": "Bingo Mayhem",
+	"description": "A mod that adds various game modes including Bingo, Lockout and more!",
+	"authors": [
+		"Jack Waterfall"
+	],
+	"contact": {
+		"homepage": "https://github.com/jwaterfall/bingo-mayhem",
+		"sources": "https://github.com/jwaterfall/bingo-mayhem"
+	},
+	"license": "MIT",
+	"icon": "assets/bingomayhem/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "net.jwaterfall.bingomayhem.BingoMayhemMod"
+		],
+		"client": [
+			"net.jwaterfall.bingomayhem.BingoMayhemModClient"
+		],
+		"fabric-datagen": [
+			"net.jwaterfall.bingomayhem.BingoMayhemModGenerator"
+		]
+	},
+	"mixins": [
+		"bingomayhem.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.22",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
